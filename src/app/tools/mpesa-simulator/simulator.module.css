@@ -1,0 +1,146 @@
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 4rem;
+  padding-bottom: 8rem;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+.controls {
+  background: var(--subtle);
+  padding: 3rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field label {
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.field input {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: var(--foreground-muted);
+  font-style: italic;
+}
+
+/* Terminal Styling */
+.terminal {
+  background: #0d1117;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  border: 1px solid #30363d;
+}
+
+.terminalHeader {
+  background: #161b22;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid #30363d;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot:nth-child(1) { background: #ff5f56; }
+.dot:nth-child(2) { background: #ffbd2e; }
+.dot:nth-child(3) { background: #27c93f; }
+
+.terminalHeader .title {
+  margin-left: 1rem;
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #8b949e;
+}
+
+.terminalBody {
+  padding: 2rem;
+  min-height: 400px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.muted {
+  color: #484f58;
+}
+
+.loading {
+  color: #58a6ff;
+}
+
+.code {
+  color: #7ee787;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.pitch {
+  background: var(--foreground);
+  color: var(--background);
+  padding: 6rem 4rem;
+  border-radius: 2rem;
+  margin-bottom: 8rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pitch {
+    background: #111;
+  }
+}
+
+.pitchContent {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pitch h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.pitch p {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  color: rgba(255,255,255,0.8);
+}

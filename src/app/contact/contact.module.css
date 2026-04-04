@@ -1,0 +1,94 @@
+.hero {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 6rem;
+  padding-bottom: 8rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.item h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.item p {
+  color: var(--foreground);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.socials a {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.form {
+  background: var(--subtle);
+  padding: 4rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field label {
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--foreground-muted);
+}
+
+.field input, .field select, .field textarea {
+  background: var(--background);
+  border: 1px solid var(--border);
+  padding: 1rem;
+  border-radius: 4px;
+  color: var(--foreground);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.field select {
+  cursor: pointer;
+}
+
+.form button {
+  align-self: flex-start;
+  margin-top: 1rem;
+}

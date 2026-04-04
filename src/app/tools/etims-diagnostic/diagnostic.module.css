@@ -1,0 +1,129 @@
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.diagnosticBox {
+  max-width: 800px;
+  margin: 0 auto 8rem;
+  background: var(--subtle);
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  padding: 4rem;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.step h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.options {
+  display: grid;
+  gap: 1rem;
+}
+
+.options button {
+  text-align: left;
+  padding: 1.5rem 2rem;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.options button:hover {
+  border-color: var(--accent);
+  transform: translateX(10px);
+}
+
+/* Results Styling */
+.result {
+  text-align: center;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.result h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.advice {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  color: var(--foreground-muted);
+}
+
+.nextSteps {
+  text-align: left;
+  background: var(--background);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 3.5rem;
+}
+
+.nextSteps h3 {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.nextSteps ul {
+  list-style: none;
+}
+
+.nextSteps li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.nextSteps li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.ctaGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.reset {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--foreground-muted);
+}

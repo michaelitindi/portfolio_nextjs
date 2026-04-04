@@ -1,66 +1,108 @@
-import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      <Navbar />
+      <main>
+        {/* Hero Section */}
+        <section className={styles.hero}>
+          <div className="container">
+            <div className={styles.heroContent}>
+              <span className={styles.badge}>Systems Architect & Developer</span>
+              <h1 className={styles.title}>
+                Building the <span className={styles.highlight}>Operating System</span> for Your Business.
+              </h1>
+              <p className={styles.subtitle}>
+                Stop fighting with spreadsheets. I build custom ERP systems, SaaS platforms, and automated workflows that help Kenyan businesses scale securely.
+              </p>
+              <div className={styles.ctaGroup}>
+                <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
+                <Link href="/portfolio" className={styles.secondaryLink}>View Case Studies →</Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Overview */}
+        <section className={styles.services}>
+          <div className="container">
+            <div className={styles.sectionHeader}>
+              <h2>Strategic Digital Solutions</h2>
+              <p>Tailored software designed to solve specific business bottlenecks.</p>
+            </div>
+            <div className="grid grid-3">
+              <div className={styles.card}>
+                <div className={styles.icon}>🏗️</div>
+                <h3>Enterprise ERP</h3>
+                <p>Consolidate Finance, CRM, HR, and Inventory into a single, secure source of truth.</p>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.icon}>🚀</div>
+                <h3>SaaS Architecture</h3>
+                <p>Multi-tenant platforms built for scale, performance, and recurring revenue.</p>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.icon}>🔌</div>
+                <h3>Automation & APIs</h3>
+                <p>Integrate M-Pesa, KRA eTIMS, and third-party tools into your existing workflows.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Case Study */}
+        <section className={styles.featured}>
+          <div className="container">
+            <div className={styles.featuredGrid}>
+              <div className={styles.featuredContent}>
+                <span className={styles.tag}>Flagship Project</span>
+                <h2>Mina ERP: Multi-Tenant Business Engine</h2>
+                <p>A comprehensive system handling complex business logic for multiple organizations, ensuring data isolation and high-speed performance.</p>
+                <ul className={styles.features}>
+                  <li>✓ Real-time Inventory Tracking</li>
+                  <li>✓ Automated Financial Reporting</li>
+                  <li>✓ Secure Role-Based Access</li>
+                </ul>
+                <Link href="/portfolio/mina-erp" className={styles.featuredLink}>Read the Full Story →</Link>
+              </div>
+              <div className={styles.featuredImage}>
+                {/* Placeholder for project image/mockup */}
+                <div className={styles.mockup}>
+                  <div className={styles.windowHeader}>
+                    <div className={styles.dots}><span></span><span></span><span></span></div>
+                  </div>
+                  <div className={styles.windowContent}>
+                    <div className={styles.skeletonLine}></div>
+                    <div className={styles.skeletonGrid}>
+                      <div></div><div></div><div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Tools Section (pSEO Hook) */}
+        <section className={styles.tools}>
+          <div className="container">
+            <div className={styles.toolsBox}>
+              <h2>Plan Your Growth</h2>
+              <p>Use my free strategic tools to calculate your digital ROI and compliance status.</p>
+              <div className={styles.toolLinks}>
+                <Link href="/tools/roi-calculator">ERP ROI Calculator</Link>
+                <Link href="/tools/etims-checker">eTIMS Compliance Check</Link>
+                <Link href="/tools/downtime-cost">Downtime Cost Tool</Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }

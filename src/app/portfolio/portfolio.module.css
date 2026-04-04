@@ -1,0 +1,105 @@
+.hero {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr;
+  padding-bottom: 8rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.projectCard {
+  background: var(--subtle);
+  padding: 3rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.3s ease;
+}
+
+.projectCard:hover {
+  border-color: var(--accent);
+}
+
+.cardHeader {
+  margin-bottom: 2rem;
+}
+
+.category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.projectCard h2 {
+  font-size: 2rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.impactBox {
+  background: var(--background);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+  margin-bottom: 2rem;
+}
+
+.impactBox strong {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.impactBox p {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: var(--border);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.link {
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
