@@ -57,35 +57,20 @@ export default function Home() {
         {/* Featured Case Study */}
         <section className={styles.featured}>
           <div className="container">
-            <div className={styles.featuredGrid}>
-              <div className={styles.featuredContent}>
-                <span className={styles.tag}>Flagship Project</span>
-                <h2>Mina ERP: Multi-Tenant Business Engine</h2>
-                <p>A comprehensive system handling complex business logic for multiple organizations, ensuring data isolation and high-speed performance.</p>
-                <ul className={styles.features}>
-                  <li>✓ Real-time Inventory Tracking</li>
-                  <li>✓ Automated Financial Reporting</li>
-                  <li>✓ Secure Role-Based Access</li>
-                </ul>
-                <Link href="/portfolio/mina-erp" className={styles.featuredLink}>Read the Full Story →</Link>
+            <div className={styles.featuredContent} style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+              <span className={styles.tag}>Flagship Project</span>
+              <h2>Mina ERP: Multi-Tenant Business Engine</h2>
+              <p>
+                Mina ERP is a high-performance, multi-tenant enterprise resource planning system designed to streamline complex business logic for organizations across Kenya. It ensures complete data isolation and lightning-fast performance, even at scale.
+              </p>
+              <div className={styles.features} style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
+                <span>✓ Real-time Inventory Tracking</span>
+                <span>✓ Automated Financial Reporting</span>
+                <span>✓ Secure Role-Based Access</span>
               </div>
-              <div className={styles.featuredImage}>
-                <div className={styles.mockup}>
-                  <div className={styles.windowHeader}>
-                    <div className={styles.dots}><span></span><span></span><span></span></div>
-                  </div>
-                  <div className={styles.windowContent}>
-                    <div className={styles.iframeWrapper}>
-                      <iframe 
-                        src="https://mina-erp.vercel.app/" 
-                        width="1280" 
-                        height="800" 
-                        style={{ border: 'none' }}
-                        title="Mina ERP Live Preview"
-                      />
-                    </div>
-                  </div>
-                </div>
+              <div className={styles.ctaGroup} style={{ justifyContent: 'center' }}>
+                <a href="https://mina-erp.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn-primary">Explore Mina ERP Live →</a>
+                <Link href="/portfolio/mina-erp" className={styles.secondaryLink}>Read the Case Study</Link>
               </div>
             </div>
           </div>
