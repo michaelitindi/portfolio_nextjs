@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   keywords: ["Web Developer Nairobi", "ERP Developer Kenya", "SaaS Developer", "Business Automation Kenya", "Custom Software Nairobi"],
   authors: [{ name: "Michael Itindi" }],
   viewport: "width=device-width, initial-scale=1",
+  verification: {
+    google: "WgqsLwL-xNJ66SgGgFnfUmnF1rJ4MaAZI2Tu1oP9D-Q",
+  },
 };
 
 export default function RootLayout({
