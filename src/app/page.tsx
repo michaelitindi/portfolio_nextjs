@@ -75,35 +75,14 @@ export default function Home() {
                     <div className={styles.dots}><span></span><span></span><span></span></div>
                   </div>
                   <div className={styles.windowContent}>
-                    <div className={styles.sidebar}>
-                      <div className={`${styles.sidebarItem} ${styles.active}`}></div>
-                      <div className={styles.sidebarItem}></div>
-                      <div className={styles.sidebarItem}></div>
-                      <div className={styles.sidebarItem}></div>
-                    </div>
-                    <div className={styles.mainView}>
-                      <div className={styles.topBar}></div>
-                      <div className={styles.statsGrid}>
-                        <div className={styles.statCard}>
-                          <div className={styles.statTitle}></div>
-                          <div className={styles.statValue}></div>
-                        </div>
-                        <div className={styles.statCard}>
-                          <div className={styles.statTitle}></div>
-                          <div className={styles.statValue}></div>
-                        </div>
-                        <div className={styles.statCard}>
-                          <div className={styles.statTitle}></div>
-                          <div className={styles.statValue}></div>
-                        </div>
-                      </div>
-                      <div className={styles.chartArea}>
-                        <div className={styles.bar} style={{ height: '40%' }}></div>
-                        <div className={styles.bar} style={{ height: '70%' }}></div>
-                        <div className={styles.bar} style={{ height: '55%' }}></div>
-                        <div className={styles.bar} style={{ height: '90%' }}></div>
-                        <div className={styles.bar} style={{ height: '65%' }}></div>
-                      </div>
+                    <div className={styles.iframeWrapper}>
+                      <iframe 
+                        src="https://mina-erp.vercel.app/" 
+                        width="1280" 
+                        height="800" 
+                        style={{ border: 'none' }}
+                        title="Mina ERP Live Preview"
+                      />
                     </div>
                   </div>
                 </div>
