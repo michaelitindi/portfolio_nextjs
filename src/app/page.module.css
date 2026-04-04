@@ -137,12 +137,33 @@
   text-decoration: underline;
 }
 
+.featuredGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .featuredGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.featuredImage {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* Mockup Window Styling */
 .mockup {
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   width: 100%;
+  max-width: 800px;
   aspect-ratio: 16/10;
   overflow: hidden;
   border: 1px solid #e5e7eb;
@@ -187,14 +208,26 @@
 .iframeWrapper {
   width: 1280px; /* Base desktop width */
   height: 800px;
-  transform: scale(0.39); /* Adjusted scale for 500px container */
+  transform: scale(0.625); /* Adjusted scale for ~800px container (800 / 1280) */
   transform-origin: 0 0;
   pointer-events: none; /* Keep it as a visual preview */
 }
 
+@media (max-width: 1200px) {
+  .iframeWrapper {
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 992px) {
+  .iframeWrapper {
+    transform: scale(0.625);
+  }
+}
+
 @media (max-width: 768px) {
   .iframeWrapper {
-    transform: scale(0.3);
+    transform: scale(0.45);
   }
 }
 
