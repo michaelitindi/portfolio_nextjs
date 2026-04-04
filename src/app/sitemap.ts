@@ -26,7 +26,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tools/manufacturing-oee',
     '/tools/trip-profitability',
     '/tools/unit-costing-engine',
-    '/tools/fleet-replacement-roi'
+    '/tools/fleet-replacement-roi',
+    '/tools/housing-levy',
+    '/tools/crypto-tax',
+    '/tools/remote-tax',
+    '/tools/solar-roi',
+    '/tools/sacco-vs-bank',
+    '/tools/stamp-duty',
+    '/tools/ecitizen-fees'
   ].map(
     (route) => ({
       url: `${baseUrl}${route}`,
