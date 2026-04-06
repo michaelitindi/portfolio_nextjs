@@ -66,7 +66,7 @@ export default function ImportCalculator() {
             </div>
             <div className={styles.pitch}>
               <h3>Protect your margins.</h3>
-              <p>I build custom procurement modules that automatically track landing costs per SKU, ensuring your pricing always accounts for the latest 2026 KRA tax shifts.</p>
+              <p>Implement custom procurement modules that automatically track landing costs per SKU, ensuring your pricing always accounts for the latest 2026 KRA tax shifts.</p>
               <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
             </div>
           </div>

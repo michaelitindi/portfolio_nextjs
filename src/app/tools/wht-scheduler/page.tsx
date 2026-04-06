@@ -67,7 +67,7 @@ export default function WHTCalculator() {
             </div>
             <div className={styles.pitch}>
               <h3>Avoid KRA late-remittance penalties.</h3>
-              <p>I build automated Finance modules that calculate WHT at the point of invoice entry and automatically flag upcoming deadlines for your accounts team.</p>
+              <p>Implement automated Finance modules that calculate WHT at the point of invoice entry and automatically flag upcoming deadlines for your accounts team.</p>
               <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
             </div>
           </div>

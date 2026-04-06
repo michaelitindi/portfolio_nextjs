@@ -50,7 +50,7 @@ export default function DeductionAuditor() {
             </div>
             <div className={styles.pitch}>
               <h3>Automate your vendor compliance.</h3>
-              <p>I build custom AP (Accounts Payable) systems that automatically verify a vendor's eTIMS status before allowing a payment to be processed.</p>
+              <p>Implement custom AP (Accounts Payable) systems that automatically verify a vendor's eTIMS status before allowing a payment to be processed.</p>
               <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
             </div>
           </div>

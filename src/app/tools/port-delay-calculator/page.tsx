@@ -55,7 +55,7 @@ export default function LogisticsCalculator() {
             </div>
             <div className={styles.pitch}>
               <h3>Predictability is profit.</h3>
-              <p>I build custom supply chain dashboards that integrate with Port tracking APIs, allowing your team to proactively manage documentation and minimize expensive terminal delays.</p>
+              <p>Implement custom supply chain dashboards that integrate with Port tracking APIs, allowing your team to proactively manage documentation and minimize expensive terminal delays.</p>
               <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
             </div>
           </div>

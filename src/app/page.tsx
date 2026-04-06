@@ -17,7 +17,7 @@ export default function Home() {
                 Building the <span className={styles.highlight}>Operating System</span> for Your Business.
               </h1>
               <p className={styles.subtitle}>
-                Stop fighting with spreadsheets. I build custom ERP systems, SaaS platforms, and automated workflows that help Kenyan businesses scale securely.
+                Stop fighting with spreadsheets. Implement custom ERP systems, SaaS platforms, and automated workflows that help Kenyan businesses scale securely.
               </p>
               <div className={styles.ctaGroup}>
                 <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
@@ -70,7 +70,6 @@ export default function Home() {
               </div>
               <div className={styles.ctaGroupCentered}>
                 <a href="https://mina-erp.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn-primary">Explore Mina ERP Live →</a>
-                <Link href="/portfolio/mina-erp" className={styles.secondaryLink}>Read the Case Study</Link>
               </div>
             </div>
           </div>

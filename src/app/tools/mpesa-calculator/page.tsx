@@ -68,7 +68,7 @@ export default function MpesaCalculator() {
             </div>
             <div className={styles.integrationPitch}>
               <h3>Want to automate your M-Pesa reconciliation?</h3>
-              <p>Stop manually checking SMS confirmations. I build systems that link M-Pesa directly to your ERP or Accounting software.</p>
+              <p>Stop manually checking SMS confirmations. Implement systems that link M-Pesa directly to your ERP or Accounting software.</p>
               <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
             </div>
           </div>

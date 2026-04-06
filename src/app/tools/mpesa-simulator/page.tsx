@@ -88,7 +88,7 @@ export default function MpesaSimulator() {
         <section className={styles.pitch}>
           <div className={styles.pitchContent}>
             <h2>Convert this data into growth.</h2>
-            <p>I build custom "Listeners" that take this M-Pesa data and automatically update your inventory, send SMS receipts, and reconcile your bank accounts in seconds.</p>
+            <p>Implement custom "Listeners" that take this M-Pesa data and automatically update your inventory, send SMS receipts, and reconcile your bank accounts in seconds.</p>
             <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
           </div>
         </section>

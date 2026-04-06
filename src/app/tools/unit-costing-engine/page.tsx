@@ -61,7 +61,7 @@ export default function UnitCosting() {
             </div>
             <div className={styles.pitch}>
               <h3>Precision leads to profitability.</h3>
-              <p>I build custom Bill of Materials (BOM) modules that automatically pull real-time pricing for raw materials and energy consumption to give you live unit costing for every production line.</p>
+              <p>Implement custom Bill of Materials (BOM) modules that automatically pull real-time pricing for raw materials and energy consumption to give you live unit costing for every production line.</p>
               <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
             </div>
           </div>

@@ -76,7 +76,7 @@ export default function OEECalculator() {
 
             <div className={styles.pitch}>
               <h3>Visualize your shop floor.</h3>
-              <p>Stop relying on manual shift reports. I build custom MES (Manufacturing Execution Systems) that pull data directly from your machines to provide real-time OEE tracking and downtime alerts.</p>
+              <p>Stop relying on manual shift reports. Implement custom MES (Manufacturing Execution Systems) that pull data directly from your machines to provide real-time OEE tracking and downtime alerts.</p>
               <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
             </div>
           </div>

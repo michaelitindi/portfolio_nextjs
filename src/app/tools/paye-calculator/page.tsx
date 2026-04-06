@@ -72,7 +72,7 @@ export default function PayeCalculator() {
             </div>
             <div className={styles.payrollPitch}>
               <h3>Running payroll for a team?</h3>
-              <p>Don't manage complex tax calculations in Excel. I build automated payroll modules for ERPs that ensure 100% compliance with KRA, NSSF, and SHIF.</p>
+              <p>Don't manage complex tax calculations in Excel. Implement automated payroll modules for ERPs that ensure 100% compliance with KRA, NSSF, and SHIF.</p>
               <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
             </div>
           </div>

@@ -54,7 +54,7 @@ export default function LendingCalculator() {
             </div>
             <div className={styles.pitch}>
               <h3>Scale your lending safely.</h3>
-              <p>I build custom core-banking modules for SACCOs and MFIs that automate loan lifecycle management, M-Pesa disbursement, and real-time interest yield reporting.</p>
+              <p>Implement custom core-banking modules for SACCOs and MFIs that automate loan lifecycle management, M-Pesa disbursement, and real-time interest yield reporting.</p>
               <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
             </div>
           </div>

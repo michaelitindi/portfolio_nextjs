@@ -61,7 +61,7 @@ export default function FleetLifecycle() {
             </div>
             <div className={styles.pitch}>
               <h3>Data-driven fleet renewal.</h3>
-              <p>Stop guessing which trucks are making money. I build fleet management systems that track the exact TCO (Total Cost of Ownership) per vehicle, alerting you the moment an asset becomes a liability.</p>
+              <p>Stop guessing which trucks are making money. Implement fleet management systems that track the exact TCO (Total Cost of Ownership) per vehicle, alerting you the moment an asset becomes a liability.</p>
               <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
             </div>
           </div>

@@ -60,7 +60,7 @@ export default function PropertyCalculator() {
             </div>
             <div className={styles.pitch}>
               <h3>Professionalize your property management.</h3>
-              <p>Stop chasing tenants on WhatsApp. I build automated property systems that generate KRA-ready MRI reports, send automated rent reminders via SMS, and track maintenance tickets.</p>
+              <p>Stop chasing tenants on WhatsApp. Implement automated property systems that generate KRA-ready MRI reports, send automated rent reminders via SMS, and track maintenance tickets.</p>
               <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
             </div>
           </div>

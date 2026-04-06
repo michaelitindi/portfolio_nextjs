@@ -114,36 +114,51 @@
   opacity: 0.8;
 }
 
-.featuredContent p {
-  color: #cccccc;
-  margin-bottom: 2.5rem;
-  font-size: 1.2rem;
-  line-height: 1.7;
-}
-
 .featuredCentered {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  padding: 2rem 0;
+}
+
+.featuredCentered h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.featuredContent p {
+  color: #cccccc;
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+  line-height: 1.8;
 }
 
 .featureBadges {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   flex-wrap: wrap;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
   color: #ffffff;
   font-weight: 500;
-  opacity: 0.9;
+  opacity: 0.95;
+}
+
+.featureBadges span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .ctaGroupCentered {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .secondaryLink {

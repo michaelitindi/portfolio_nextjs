@@ -69,7 +69,7 @@ export default function TripProfitability() {
             </div>
             <div className={styles.pitch}>
               <h3>Know your profit before the key turns.</h3>
-              <p>I build custom fleet management modules that integrate with fuel card APIs and M-Pesa to track real-time trip expenses and prevent fuel siphoning leakage.</p>
+              <p>Implement custom fleet management modules that integrate with fuel card APIs and M-Pesa to track real-time trip expenses and prevent fuel siphoning leakage.</p>
               <a href={process.env.NEXT_PUBLIC_TALLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">See if you're a good fit</a>
             </div>
           </div>
